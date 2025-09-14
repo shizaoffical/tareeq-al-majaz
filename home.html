@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tareeq Al majaz</title>
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./images/logo.jpg" width="60px"
+        /></a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-overlay"></div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <button class="close-btn">&times;</button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Same Day Delivery</a></li>
+                <li><a class="dropdown-item" href="#">Next Day Delivery</a></li>
+                <li><a class="dropdown-item" href="#">Gift Delivery</a></li>
+                <li><a class="dropdown-item" href="#">Packages Delivery</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Documents Delivery</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="locationDropdown" role="button">
+                Location
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="locationDropdown">
+                <li><a class="dropdown-item" href="#dubai">Dubai</a></li>
+                <li><a class="dropdown-item" href="#sharjah">Sharjah</a></li>
+                <li><a class="dropdown-item" href="#ajman">Ajman</a></li>
+                <li><a class="dropdown-item" href="#fujairah">Fujairah</a></li>
+                <li><a class="dropdown-item" href="#ras-al-khaimah">Ras Al Khaimah</a></li>
+                <li><a class="dropdown-item" href="#um-al-quwain">Um Al Quwain</a></li>
+              </ul>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="./login.html">Profile</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Carasoul -->
+      <div
+        id="customCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/herobg-2.jpg"
+              class="d-block w-100"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption">
+              <h3>Quick & Reliable Courier Service!</h3>
+              <p>
+                Trusted courier service with significant experience. We provide
+                fast, responsible and hassle-free courier services. Handling
+                each item with utmost care and caution
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/herobg-1.jpg"
+              class="d-block w-100"
+              alt="Slide 2"
+            />
+            <div class="carousel-caption">
+              <h3>Quick & Reliable Courier Service!</h3>
+              <p>
+                Trusted courier service with significant experience. We provide
+                fast, responsible and hassle-free courier services. Handling
+                each item with utmost care and caution.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/herobg-3.jpg"
+              class="d-block w-100"
+              alt="Slide 3"
+            />
+            <div class="carousel-caption">
+              <h3>Quick & Reliable Courier Service!</h3>
+              <p>
+                Trusted courier service with significant experience. We provide
+                fast, responsible and hassle-free courier services. Handling
+                each item with utmost care and caution
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- Pickup & Delivery Section -->
+      <section class="pickup-delivery">
+        <div class="container">
+          <div class="pickup-content">
+            <div class="pickup-text">
+              <h2>We Pickup & Deliver</h2>
+              <p>
+                Send or receive anything from point A to Z by simply booking the
+                <strong>Tareeq al Majaz</strong> Go pickup and drop-off service.
+                Whether you require on-demand, same-day, or next-day delivery,
+                we have you covered.
+              </p>
+              <p>
+                We can deliver anywhere in Dubai, Sharjah, Ajman, Al Ain & Ras
+                Al-Khaimah 7 days a week with bikes or vans depending on your
+                needs. Our trusted drivers look forward to helping you run your
+                errands smoothly.
+              </p>
+              <div class="pickup-buttons">
+                <a href="#" class="btn btn-primary">Book Online</a>
+                <a href="" class="btn btn-whatsapp"> WhatsApp Us </a>
+              </div>
+            </div>
+            <div class="pickup-image">
+              <img src="./images/delivery.jpg" alt="Delivery Service" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cost-Effective Delivery Driver Section -->
+      <section class="cost-effective">
+        <div class="container">
+          <div class="cost-content">
+            <div class="cost-image">
+              <img src="./images/delivery-driver.jpg" alt="Delivery Driver" />
+            </div>
+            <div class="cost-text">
+              <h2>Your Personal Cost-Effective Delivery Driver</h2>
+              <p>
+                Whether you want to deliver birthday gifts, important documents,
+                electronics, valuables, or product delivery for your small
+                business in Dubai and other emirates in the UAE, we can help
+                you!
+              </p>
+              <ul class="cost-list">
+                <li>
+                  <i class="fas fa-clock"></i>
+                  Save time with fast deliveries in Dubai, Abu Dhabi, Sharjah,
+                  Ajman, Al Ain & Ras Al-Khaimah.
+                </li>
+                <li>
+                  <i class="fas fa-truck"></i>
+                  Reliable and efficient deliveries with trusted friendly
+                  drivers.
+                </li>
+                <li>
+                  <i class="fas fa-sync-alt"></i>
+                  Subscriptions and special rates for routine deliveries for
+                  businesses.
+                </li>
+                <li>
+                  <i class="fas fa-tags"></i>
+                  Efficient and valuable deliveries with a transparent price
+                  structure.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <div class="container">
+        <center class="services-heading">
+          3 Easy step to book our service
+        </center>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="service" data-id="1">
+              <span class="service-number">01</span>
+              <span class="service-title">Advance Payment</span>
+              <div class="service-content">We pay at the time of pickup.</div>
+              <div class="service-icon">💳</div>
+            </div>
+            <div class="service active" data-id="2">
+              <span class="service-number">02</span>
+              <span class="service-title">24/7 Service</span>
+              <div class="service-content">Available anytime.</div>
+              <div class="service-icon">⏰</div>
+            </div>
+            <div class="service" data-id="3">
+              <span class="service-number">03</span>
+              <span class="service-title">Instant Follow-up</span>
+              <div class="service-content">Quick response for queries.</div>
+              <div class="service-icon">📞</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section class="about-us" id="about">
+        <div class="container">
+          <div class="about-content">
+            <!-- Left Side: Image -->
+            <div class="about-image">
+              <img src="./images/about-us.jpg" alt="About Us Image" />
+            </div>
+
+            <!-- Right Side: Text Content -->
+            <div class="about-text">
+              <h2 class="about-title">About Us</h2>
+              <p class="about-description">
+                Welcome to <strong>Tareeq Al majaz</strong>, your trusted
+                delivery partner in the UAE. With over
+                <strong>8 years of experience</strong>, we specialize in
+                providing reliable, fast, and cost-effective delivery solutions
+                that cater to the unique needs of businesses and individuals.
+              </p>
+              <p class="about-description">
+                Since our inception, we have committed ourselves to excellence,
+                ensuring that each parcel we handle is delivered
+                <strong>safely, securely, and on time</strong>. We understand
+                the fast-paced nature of life in the UAE, and we are dedicated
+                to offering a delivery service that keeps up with your needs.
+              </p>
+              <p class="about-description">
+                Whether you're sending a single package, managing regular
+                shipments, or need customized logistics solutions, we have the
+                expertise and technology to make it happen seamlessly. Our
+                <strong
+                  >fleet of modern vehicles, experienced drivers, and dedicated
+                  customer support team</strong
+                >
+                ensure that your experience with us is smooth from start to
+                finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- locations-section -->
+      <section class="locations-section" id="locationDropdown">
+        <div class="container">
+          <div class="locations-header">
+            <span class="locations-header-icon">🚀</span>
+            <h2>Anything. Anywhere. Anytime.</h2>
+            <a href="#" class="deliver-btn">DELIVER NOW →</a>
+          </div>
+          <div class="locations-grid">
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #007bff"></div>
+              <p>Dubai</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #0f0094"></div>
+              <p>Abu Dhabi</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #007bff"></div>
+              <p>Sharjah</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #0f0094"></div>
+              <p>Ajman</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #007bff"></div>
+              <p>Umm Al Quwain</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #0f0094"></div>
+              <p>Fujairah</p>
+            </a>
+            <a href="" class="location-card">
+              <div class="location-icon" style="background: #007bff"></div>
+              <p>Ras Al Khaimah</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-us" id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <!-- Left Side: Contact Form -->
+            <div class="contact-form">
+              <h2 class="contact-title">Contact Us</h2>
+              <p class="contact-subtitle">
+                We would love to hear from you! Fill out the form below.
+              </p>
+
+              <form action="#" method="POST">
+                <div class="input-group">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fab fa-whatsapp"></i>
+                  <input
+                    type="text"
+                    name="whatsapp"
+                    placeholder="WhatsApp Number"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fas fa-phone"></i>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input
+                    type="text"
+                    name="location"
+                    placeholder="Your Location"
+                    required
+                  />
+                </div>
+
+                <!-- Google reCAPTCHA Checkbox -->
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+                <button type="submit" class="btn-send">Send Message</button>
+              </form>
+            </div>
+
+            <!-- Right Side: Image (If Needed) -->
+            <div class="contact-image">
+              <img src="./images/contact-us.jpg" alt="Contact Us" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why-choose-us -->
+      <section class="container why-choose-us">
+        <h2 class="why-section-title">Why Choose Us?</h2>
+        <div class="features">
+          <div class="feature-box">
+            <div class="icon-box"><i class="fas fa-trophy"></i></div>
+            <h3>Experience</h3>
+            <p>
+              8+ years of proven expertise in delivering exceptional service.
+            </p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-box"><i class="fas fa-clock"></i></div>
+            <h3>Reliable</h3>
+            <p>On-time deliveries, every time.</p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-box"><i class="fas fa-tags"></i></div>
+            <h3>Cost-effective</h3>
+            <p>Affordable pricing without compromising on service quality.</p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-box"><i class="fas fa-heart"></i></div>
+            <h3>Customer-focused</h3>
+            <p>
+              We prioritize your satisfaction with personalized solutions and
+              customer care.
+            </p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Nationwide Coverage</h3>
+            <p>Serving all areas within the UAE.</p>
+          </div>
+        </div>
+        <p class="thank-you">
+          Thank you for choosing <strong>Tareeq Al majaz</strong>. We look
+          forward to being your trusted partner!
+        </p>
+      </section>
+
+      <!-- Footer  -->
+      <footer class="footer">
+        <div class="container">
+          <p>© 2025 Tareeq Al majaz. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
